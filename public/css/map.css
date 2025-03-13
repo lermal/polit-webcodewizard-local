@@ -1,0 +1,129 @@
+#map {
+    height: 600px !important;
+    width: 100% !important;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.leaflet-container {
+    z-index: 1;
+    position: relative !important;
+}
+
+.card-body {
+    position: relative;
+    min-height: 600px;
+}
+
+.markers-list,
+.routes-list {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.marker-item,
+.route-item {
+    transition: all 0.3s ease;
+}
+
+.marker-item:hover,
+.route-item:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-light-danger {
+    color: #f41127;
+    background-color: rgb(244 17 39 / 0.1);
+}
+
+.btn-light-danger:hover {
+    color: #fff;
+    background-color: #f41127;
+}
+
+.badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+}
+
+/* Стили для маркеров на карте */
+.leaflet-popup-content {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.leaflet-popup-content h6 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.leaflet-popup-content p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.custom-div-icon {
+    background: none;
+    border: none;
+}
+
+.custom-div-icon i {
+    display: block;
+    text-align: center;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.custom-div-icon i:hover {
+    color: #3498db !important;
+    transform: translateY(-50%) scale(1.2);
+    transition: all 0.2s ease;
+}
+
+.swal2-input, .swal2-textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.swal2-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.swal2-input-group label {
+    margin-right: 10px;
+    min-width: 80px;
+}
+
+.marker-tooltip {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.marker-tooltip.leaflet-tooltip-top:before {
+    border-top-color: white;
+}
+
+.route-info {
+    background: white;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.route-info .alert {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.route-info i {
+    color: #2c3e50;
+}
